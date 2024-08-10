@@ -1,0 +1,18 @@
+.kpi-box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.kpi-box h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.kpi-box p {
+    font-size: 18px;
+    color: #666;
+}

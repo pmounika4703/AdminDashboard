@@ -1,0 +1,35 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 230px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table td {
+    background-color: white;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
