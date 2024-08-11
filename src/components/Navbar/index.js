@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import "./index.css"
 
 const Navbar = () => {
@@ -13,9 +13,9 @@ const Navbar = () => {
     return (
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/users">Users</a></li>
-                <li><a href="/posts">Posts</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/users">Users</Link></li>
+                <li><Link to="/posts">Posts</Link></li>
                 <li><button onClick={handleLogout}>Logout</button></li>
             </ul>
         </nav>
