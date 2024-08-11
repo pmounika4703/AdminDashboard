@@ -12,7 +12,7 @@ const PrivateRoute = ({ element }) => {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AdminDashboard">
       <Routes>
         {/* Public route */}
         <Route path="/login" element={<Login />} />
