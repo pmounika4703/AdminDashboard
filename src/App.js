@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Swicth, Navigate } from 'react-router-dom';
 import Home from './components/Home';
-import UsersList from './components/Users';
-import PostsList from './components/Posts';
+import Users from './components/Users';
+import Posts from './components/Posts';
 import Login from './components/Login';
 import { isAuthenticated } from './utils/auth';
 
@@ -13,18 +13,18 @@ const PrivateRoute = ({ element }) => {
 function App() {
   return (
     <Router basename="/AdminDashboard">
-      <Routes>
+      <Swicth>
         {/* Public route */}
         <Route path="/login" element={<Login />} />
 
         {/* Protected routes */}
         <Route path="/" element={<PrivateRoute element={<Home />} />} />
-        <Route path="/users" element={<PrivateRoute element={<UsersList />} />} />
-        <Route path="/posts" element={<PrivateRoute element={<PostsList />} />} />
+        <Route path="/users" element={<PrivateRoute element={<Users />} />} />
+        <Route path="/posts" element={<PrivateRoute element={<Posts />} />} />
 
         {/* Redirect any unknown routes to login */}
         <Route path="*" element={<Navigate to="/login" />} />
-      </Routes>
+      </Switch>
     </Router>
   );
 }
